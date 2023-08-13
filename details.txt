@@ -1,1 +1,1 @@
-Sample project to show the starwars swapi ships data
+Sample project to show the starwars swapi ships data in horizontal menu tabset
