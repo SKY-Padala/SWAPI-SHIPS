@@ -1,0 +1,89 @@
+.tab-menu {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    background-color: transparent;
+}
+.imgAlign{
+    vertical-align: bottom;
+}
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-bottom: none;
+    background-color: transparent;
+    color: #333;
+
+    &:hover {
+        background-color: #ddd;
+    }
+
+    &.active {
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px 5px 0px 0px;
+    }
+}
+.winner-badge{
+    width: 50px;
+    height: 50px;
+}
+.tab-content {
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+    flex-grow: 1;
+    border: 2px solid transparent;
+    border-top: none;
+    border-color: transparent;
+    height: 333px;
+}
+.starships-tab {
+    .starships-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .starship-card {
+            display: flex;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #fff;
+            background-image: url('../../../public/images/cardbackground.jpg');
+            /* Add your card image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            /* Add a box shadow */
+
+            .card-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                &:first-child {
+                margin-right: 20px;
+                    }
+                .films-column {
+                    display: flex;
+                    align-items: center;
+
+                    .films-label {
+                        margin-right: 5px;
+                    }
+
+                    .films-count {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

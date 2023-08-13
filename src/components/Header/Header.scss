@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+        align-items: center;
+        background-color: transparent;
+        height: 189px;
+        justify-content: flex-start;
+        flex-direction: column;
+}
+
+.logo {
+    img {
+        max-width: 100%;
+        height: 80px;
+    }
+}
+
+// Media queries for responsiveness
+@media screen and (max-width: 768px) {
+    .header {
+        height: 90px;
+    }
+}
